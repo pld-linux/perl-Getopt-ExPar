@@ -5,7 +5,7 @@ Summary:	Getopt::ExPar - extended parameters command line parser
 Summary(pl):	Getopt::ExPar - analizator rozszerzonych parametrów w linii polecenia
 Name:		perl-Getopt-ExPar
 Version:	0.01
-Release:	10
+Release:	11
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -27,9 +27,13 @@ linii polecenia.
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p1
+mkdir -p lib/Getopt
+mv ExPar.pm lib/Getopt
+mv Reference_Parser.pm lib
 
 %build
 %{__perl} Makefile.PL \
+	VERSION_FROM=lib/Getopt/ExPar.pm \
 	INSTALLDIRS=vendor
 %{__make}
 
@@ -45,7 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_vendorlib}/Getopt/ExPar.pm
-%{perl_vendorlib}/Getopt/Reference_Parser.pm
-%{perl_vendorlib}/Getopt/expar_test.pl
+%{perl_vendorlib}/%{pdir}/*.pm
+%{perl_vendorlib}/*.pm
 %{_mandir}/man3/*
