@@ -5,7 +5,7 @@ Summary:	Getopt::ExPar perl module
 Summary(pl):	Modu³ perla Getopt::ExPar
 Name:		perl-Getopt-ExPar
 Version:	0.01
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
