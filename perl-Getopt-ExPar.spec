@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	ExPar
-Summary:	Getopt::ExPar perl module
-Summary(pl):	Modu³ perla Getopt::ExPar
+Summary:	Getopt::ExPar - extended parameters command line parser
+Summary(pl):	Getopt::ExPar - analizator rozszerzonych parametrów w linii polecenia
 Name:		perl-Getopt-ExPar
 Version:	0.01
 Release:	9
@@ -18,10 +18,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Getopt::ExPar - Extended Parameters command line parser.
+Getopt::ExPar Perl module is extended parameters command line parser.
 
 %description -l pl
-Modu³ perla Getopt::ExPar.
+Modu³ Perla Getopt::ExPar jest analizatorem rozszerzonych parametrów w
+linii polecenia.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
