@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	ExPar
-%include	/usr/lib/rpm/macros.perl
 Summary:	Getopt-ExPar perl module
 Summary(pl):	Modu³ perla Getopt-ExPar
 Name:		perl-Getopt-ExPar
 Version:	0.01
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Getopt-ExPar - Extended Parameters command line parser.
 Modu³ perla Getopt-ExPar.
 
 %prep
-%setup -q -n Getopt-ExPar-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch -p1
 
 %build
