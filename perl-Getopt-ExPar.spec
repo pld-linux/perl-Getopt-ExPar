@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Getopt
-%define	pnam	ExPar
+%define		pdir	Getopt
+%define		pnam	ExPar
 Summary:	Getopt::ExPar - extended parameters command line parser
 Summary(pl):	Getopt::ExPar - analizator rozszerzonych parametrów w linii polecenia
 Name:		perl-Getopt-ExPar
