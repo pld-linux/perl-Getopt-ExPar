@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Getopt
 %define	pnam	ExPar
-Summary:	Getopt-ExPar perl module
-Summary(pl):	Modu³ perla Getopt-ExPar
+Summary:	Getopt::ExPar perl module
+Summary(pl):	Modu³ perla Getopt::ExPar
 Name:		perl-Getopt-ExPar
 Version:	0.01
 Release:	8
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Getopt-ExPar - Extended Parameters command line parser.
+Getopt::ExPar - Extended Parameters command line parser.
 
 %description -l pl
-Modu³ perla Getopt-ExPar.
+Modu³ perla Getopt::ExPar.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
