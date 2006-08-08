@@ -26,7 +26,7 @@ linii polecenia.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch -p1
+%patch0 -p1
 mkdir -p lib/Getopt
 mv ExPar.pm lib/Getopt
 mv Reference_Parser.pm lib
