@@ -2,7 +2,7 @@
 %define		pdir	Getopt
 %define		pnam	ExPar
 Summary:	Getopt::ExPar - extended parameters command line parser
-Summary(pl.UTF-8):   Getopt::ExPar - analizator rozszerzonych parametrów w linii polecenia
+Summary(pl.UTF-8):	Getopt::ExPar - analizator rozszerzonych parametrów w linii polecenia
 Name:		perl-Getopt-ExPar
 Version:	0.01
 Release:	11
