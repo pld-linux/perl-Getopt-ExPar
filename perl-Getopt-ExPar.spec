@@ -5,7 +5,7 @@ Summary:	Getopt::ExPar - extended parameters command line parser
 Summary(pl.UTF-8):	Getopt::ExPar - analizator rozszerzonych parametrów w linii polecenia
 Name:		perl-Getopt-ExPar
 Version:	0.01
-Release:	11
+Release:	12
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
