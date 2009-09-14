@@ -4,16 +4,15 @@
 Summary:	Getopt::ExPar - extended parameters command line parser
 Summary(pl.UTF-8):	Getopt::ExPar - analizator rozszerzonych parametrów w linii polecenia
 Name:		perl-Getopt-ExPar
-Version:	0.01
-Release:	12
+Version:	1.01
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4fffd02338188405e89d52f855cae8fc
-Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 4.1-13
+# Source0-md5:	ef1774b5c07f780fb5e40bd3539cd183
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,11 +24,10 @@ Moduł Perla Getopt::ExPar jest analizatorem rozszerzonych parametrów w
 linii polecenia.
 
 %prep
-%setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p1
+%setup -q -n %{pdir}-%{pnam}-%{version}/%{pdir}
+
 mkdir -p lib/Getopt
-mv ExPar.pm lib/Getopt
-mv Reference_Parser.pm lib
+cp ExPar.pm lib/Getopt
 
 %build
 %{__perl} Makefile.PL \
@@ -50,5 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %{perl_vendorlib}/%{pdir}/*.pm
-%{perl_vendorlib}/*.pm
 %{_mandir}/man3/*
