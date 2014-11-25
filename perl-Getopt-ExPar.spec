@@ -1,6 +1,6 @@
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Getopt
 %define		pnam	ExPar
+%include	/usr/lib/rpm/macros.perl
 Summary:	Getopt::ExPar - extended parameters command line parser
 Summary(pl.UTF-8):	Getopt::ExPar - analizator rozszerzonych parametrów w linii polecenia
 Name:		perl-Getopt-ExPar
@@ -11,6 +11,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ef1774b5c07f780fb5e40bd3539cd183
+URL:		http://search.cpan.org/dist/Getopt-ExPar/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
